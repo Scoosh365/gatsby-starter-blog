@@ -6,6 +6,18 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Header from '../components/Header';
 
+const IndexPage = () => (
+  <main>
+    <Header />
+    <section>
+      <h2>Welcome to the Homepage</h2>
+      <p>This is the content of the homepage.</p>
+    </section>
+  </main>
+);
+
+export default IndexPage;
+
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
