@@ -1,4 +1,4 @@
-// src/components/Header.js
+// src/components/header.js
 import React from 'react';
 
 const Header = () => (
